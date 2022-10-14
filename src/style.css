@@ -1,0 +1,97 @@
+@font-face {
+  font-family: Poppins;
+  src: url('./fonts/Poppins-Regular.ttf') format('ttf');
+}
+
+:root {
+  font-family: Poppins, Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+}
+
+body {
+  display: grid;
+  grid-template-rows: 5vh 95vh;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  height: 5vh;
+  width: 100vw;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+
+  font-family: Poppins, Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.25rem;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+
+.search-field {
+  font-family: Poppins, Verdana, Geneva, Tahoma, sans-serif;
+  height: 30px;
+  width: 300px;
+  padding-left: 10px;
+  margin: 0;
+  padding: 0;
+  padding-left: 10px;
+  border: 1px solid black;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  border-right: 0;
+}
+
+.search-button {
+  background-color: white;
+  height: 32px;
+  width: 50px;
+  margin: 0;
+  padding: 0;
+  border: 1px solid black;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  border-left: 0;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  color: orangered;
+}
+
+main {
+  padding: 20px;
+  padding-left: 80px;
+  padding-right: 80px;
+  height: calc(95vh - 40px);
+  width: calc(100vh - 200px);
+}
+
+.city,
+.temperature {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+#weather-condition {
+  font-weight: 200;
+  font-size: 8rem;
+}
+
+.actual-conditions,
+.feels-like,
+.date,
+.humidity,
+.wind-speed,
+.wind-gusts {
+  font-size: 1.25rem;
+}
+
+/* .fa-droplet-percent {
+  font-weight: 200;
+  font-size: 4rem;
+} */

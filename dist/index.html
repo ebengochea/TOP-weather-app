@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" href="../src/images/favicon.png" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./bundle.js" defer></script>
+    <title>Weather App</title>
+  </head>
+  <body>
+    <header>
+      <div class="search-bar">
+        <input
+          type="text"
+          placeholder="Search location..."
+          class="search-field"
+          value=""
+        />
+        <button class="search-button">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+    </header>
+    <main>
+      <div class="weather-stats">
+        <p class="condition-icon">
+          <i id="weather-condition"></i>
+        </p>
+        <p class="actual-conditions"></p>
+        <p class="city"></p>
+        <p class="date"></p>
+        <p class="time"></p>
+
+        <p class="temperature"></p>
+        <p>Feels like</p>
+        <p class="feels-like"></p>
+
+        <div class="humidity-container">
+          <p>Humidity</p>
+          <p class="humidity"></p>
+        </div>
+        <p>Wind</p>
+        <p class="wind-speed"></p>
+        <p>Wind gusts</p>
+        <p class="wind-gusts"></p>
+      </div>
+    </main>
+  </body>
+</html>
